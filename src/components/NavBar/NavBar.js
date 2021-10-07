@@ -10,47 +10,54 @@ function NavBar() {
  
   return (
  
-    <nav className="rounded-lg">
+    <nav>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <div className="flex-shrink-0">
+            <div className="flex-shrink-0 ml-16">
               <Link to="/">
-                <img
-                  className="h-8 w-8"
-                  src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
-                  alt="Workflow"
-                />
+                <h3 className="brand-2 font-bold "> Amina <span className="brand-1">Anika</span></h3>
               </Link>
             </div>
             <div className="hidden md:block">
-              <div className="ml-10 flex items-baseline space-x-4">
+              <div className="ml-48 flex items-baseline space-x-2 ">
                 <Link to="/">
                   {" "}
-                  <button className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                  <button className="px-3 py-2 rounded-md text-sm font-medium nav-link">
                     Home
                   </button>{" "}
                 </Link>
                 
                     <Link to="/addBlog">
                       {" "}
-                      <button className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                      <button className="px-3 py-2 rounded-md text-sm font-medium nav-link">
                         Add Blog
                       </button>{" "}
                     </Link>
                     <Link to="/manageBlog">
                       {" "}
-                      <button className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                      <button className="px-3 py-2 rounded-md text-sm font-medium nav-link">
                         Manage Blog
                       </button>{" "}
                     </Link>
                     <Link to="/addAdmin">
                       {" "}
-                      <button className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                      <button className="px-3 py-2 rounded-md text-sm font-medium nav-link">
                         Add Admin
                       </button>{" "}
                     </Link>
-                
+                    <Link to="/addAdmin">
+                      {" "}
+                      <button className="px-3 py-2 rounded-md text-sm font-medium nav-link">
+                        Add Admin
+                      </button>{" "}
+                    </Link>
+                    <Link to="/addAdmin">
+                      {" "}
+                      <button className="px-3 py-2 rounded-md text-sm font-medium nav-link">
+                        Add Admin
+                      </button>{" "}
+                    </Link>
                 
               </div>
             </div>
@@ -113,10 +120,10 @@ function NavBar() {
       >
         {(ref) => (
           <div className="md:hidden" id="mobile-menu">
-            <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3 ">
             <Link to="/">
                   {" "}
-                  <button className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium">
+                  <button className="block px-3 py-2 rounded-md text-base font-medium nav-link">
                     Home
                   </button>{" "}
                 </Link>
@@ -124,19 +131,19 @@ function NavBar() {
              
                   <Link to="/addBlog">
                     {" "}
-                    <button className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium">
+                    <button className="block px-3 py-2 rounded-md text-base font-medium nav-link">
                       Add Blog
                     </button>{" "}
                   </Link>
                   <Link to="/manageBlog">
                     {" "}
-                    <button className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium">
+                    <button className="block px-3 py-2 rounded-md text-base font-medium nav-link">
                       Manage Blog
                     </button>{" "}
                   </Link>
                   <Link to="/addAdmin">
                     {" "}
-                    <button className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium">
+                    <button className="block px-3 py-2 rounded-md text-base font-medium nav-link">
                       Add Admin
                     </button>{" "}
                   </Link>

@@ -1,7 +1,50 @@
-.App {
-  text-align: center;
+ 
+.App-border {
+  border: solid 10px #00151F;
+  position: relative;
+  overflow: auto; 
+ 
+  border-radius: 20px;
+  width: 100vw;
+ height: 100vh;
+ 
+  background-color: #F4F5F7;
+  box-shadow: 0 2px 4px -2px rgb(0 0 0 / 15%);
+  transition: 0.4s ease-in-out;
 }
 
+
+/* .c-scrollbar {
+  width: 10px;
+  top: 8px;
+  bottom: 10px;
+  height: calc(100vh - 20px);
+
+  position: absolute;
+  right: 0;
+
+  transform-origin: center right;
+  transition: transform 0.3s, opacity 0.3s;
+  opacity: 0;
+}
+
+.scrollbar_thumb {
+  width: 4px;
+  right: 1px;
+  border-radius: 10px;
+  background-color: #afb42b;
+  opacity: 1;
+
+  position: absolute;
+  top: 0;
+
+  margin: 2px;
+  cursor: -webkit-grab;
+  cursor: grab;
+} */
+
+
+/* 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +78,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

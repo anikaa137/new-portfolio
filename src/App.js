@@ -41,7 +41,7 @@ function App() {
       <div class="App">
         <CustomScrollbars autoHide autoHideTimeout={500} autoHideDuration={200}>
           <Router>
-            <NavBar />
+            <NavBar/>
              <Banner/>
           </Router>
         </CustomScrollbars>

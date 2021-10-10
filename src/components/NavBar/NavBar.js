@@ -13,56 +13,55 @@ function NavBar() {
     <nav className="sticky top-0 z-30 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center">
-            <div className="flex-shrink-0 ml-16">
+          <div className="flex items-center mx-24 sm:mx-8 lg:mx-20 xl:mx-16">
+            <div className="flex-shrink-0  " >
               <Link to="/">
                 <h3 className="brand-2 font-bold "> Amina <span className="brand-1">Anika</span></h3>
               </Link>
             </div>
-            <div className="hidden md:block">
-              <div className="ml-48 flex items-baseline space-x-2 ">
+            <div className="hidden lg:block">
+              <div className=" flex items-baseline space-x-2 ">
                 <Link to="/">
                   {" "}
-                  <button className="px-3 py-2 rounded-md text-sm font-medium nav-link">
-                    Home
-                  </button>{" "}
+                  <h2 className="px-3 py-2 rounded-md text-sm font-medium nav-link">Home</h2>
+                 
                 </Link>
                 
                     <Link to="/addBlog">
                       {" "}
                       <button className="px-3 py-2 rounded-md text-sm font-medium nav-link">
-                        Add Blog
+                         About
                       </button>{" "}
                     </Link>
                     <Link to="/manageBlog">
                       {" "}
                       <button className="px-3 py-2 rounded-md text-sm font-medium nav-link">
-                        Manage Blog
+                         Portfolio
                       </button>{" "}
                     </Link>
                     <Link to="/addAdmin">
                       {" "}
                       <button className="px-3 py-2 rounded-md text-sm font-medium nav-link">
-                        Add Admin
+                         Reaume
                       </button>{" "}
                     </Link>
                     <Link to="/addAdmin">
                       {" "}
                       <button className="px-3 py-2 rounded-md text-sm font-medium nav-link">
-                        Add Admin
+                         Contact
                       </button>{" "}
                     </Link>
                     <Link to="/addAdmin">
                       {" "}
                       <button className="px-3 py-2 rounded-md text-sm font-medium nav-link">
-                        Add Admin
+                         Download
                       </button>{" "}
                     </Link>
                 
               </div>
             </div>
           </div>
-          <div className="-mr-2 flex md:hidden">
+          <div className="-mr-2 flex lg:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
               type="button"
@@ -119,7 +118,7 @@ function NavBar() {
         leaveTo="opacity-0 scale-95"
       >
         {(ref) => (
-          <div className="md:hidden" id="mobile-menu">
+          <div className="lg:hidden" id="mobile-menu">
             <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3 ">
             <Link to="/">
                   {" "}

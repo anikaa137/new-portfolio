@@ -4,12 +4,12 @@
   position: relative;
   overflow: auto;
   border-radius: 20px;
-  width: 100vw;
+  /* width: 100vw; */
   height: 100vh;
-   
+  /* margin:0 auto;  */
   background-color: #f4f5f7;
-  box-shadow: 0 2px 4px -2px rgb(0 0 0 / 15%);
-  transition: 0.4s ease-in-out;
+  /* box-shadow: 0 2px 4px -2px rgb(0 0 0 / 15%); */
+  /* transition: 0.4s ease-in-out; */
 }
 .brand-1 {
   color: #00151f;

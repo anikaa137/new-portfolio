@@ -6,27 +6,35 @@ import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Banner from "./components/Banner/Banner";
 
+// scrollbar-section-start
 const renderThumb = ({ style, ...props }) => {
   const thumbStyle = {
     borderRadius: 10,
     backgroundColor: "#afb42b",
-
-    width: 4,
-    right: 1,
+    marginRight: 0,
+    // width: 4,
+    // right: 1,
 
     // opacity: 1
   };
   return <div style={{ ...style, ...thumbStyle }} {...props} />;
 };
 
+const renderView = ({ style, ...props }) => {
+  return (
+    <div className="sm:-ml-3.5  md:-ml-px " style={{ ...style }} {...props} />
+  );
+};
+
 const CustomScrollbars = (props) => (
   <Scrollbars
     renderThumbHorizontal={renderThumb}
     renderThumbVertical={renderThumb}
+    renderView={renderView}
     {...props}
   />
 );
-
+// scrollbar-section-end
 function App() {
   return (
     <>
@@ -41,8 +49,8 @@ function App() {
       <div class="App">
         <CustomScrollbars autoHide autoHideTimeout={500} autoHideDuration={200}>
           <Router>
-            <NavBar/>
-             <Banner/>
+            <NavBar />
+            <Banner />
           </Router>
         </CustomScrollbars>
       </div>
@@ -51,3 +59,5 @@ function App() {
 }
 
 export default App;
+
+// https://codesandbox.io/s/react-custom-scrollbar-scrolltotop-forked-k5zwe?file=/src/Scrollbar.tsx:793-1135

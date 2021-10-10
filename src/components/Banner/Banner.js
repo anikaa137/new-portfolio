@@ -1,22 +1,32 @@
-import React from 'react';
-import "./Banner.css"
-import explore from '../video/explore4.mp4'
+import React from "react";
+import "./Banner.css";
+import explore from "../video/explore4.mp4";
 const Banner = () => {
-    return (
-        <section class="showcase mx-8">
-            <video  src={explore} autoPlay muted loop></video>
-            <div class="overlay"></div>
-            <div class="text">
-      <h2>Never Stop To </h2> 
-      <h3>Exploring The World</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat.</p>
-       
-    </div>
+  return (
+    <section class="showcase   h-3/4   lg:h-4/5 2xl:h-2/3 lg:mx-8 sm:mx-8 md:mx-8  2xl:mx-8 ">
+      <video
+        className="rounded-b-3xl"
+        src={explore}
+        autoPlay
+        muted
+        loop
+      ></video>
+      <div class="overlay rounded-b-3xl"></div>
+      {/* Banner text*/}
+      <div class="text text-center lg:text-left  z-10 absolute inset-x-0 top-14 lg:top-14   2xl:top-40  flex items-center justify-center ">
+        <div>
+          <h3 className="2xl:text-5xl"> hi my new friend !</h3>
+          <h2 className="mt-6 ">
+            {" "}
+            Discover my <br /> art space!{" "}
+          </h2>
+          <button class="bg-transparent mt-5  text   font-extrabold   py-1.5 px-14 border-2 border-white rounded-full">
+            Video Resume
+          </button>
+        </div>
+      </div>
     </section>
-    );
+  );
 };
 
 export default Banner;

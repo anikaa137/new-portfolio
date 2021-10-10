@@ -6,11 +6,13 @@ function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
  
   const [isAdmin, setIsAdmin] = useState(false);
- 
+
+  
  
   return (
  
-    <nav className="sticky top-0 z-30 bg-white">
+  //  <div className="py-2" style={{backgroundColor: `##FCFCFE`,  opacity: 0.3}}>
+      <nav className="sticky top-0 z-30 bg-white nav "   >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center mx-24 sm:mx-8 lg:mx-20 xl:mx-16">
@@ -153,6 +155,7 @@ function NavBar() {
         )}
       </Transition>
     </nav>
+  //  </div>
   );
 }
 

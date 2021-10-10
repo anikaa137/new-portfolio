@@ -1,5 +1,6 @@
 import React from "react";
 import "./Banner.css";
+import { BsPlayFill } from 'react-icons/bs';
 import explore from "../video/explore4.mp4";
 const Banner = () => {
   return (
@@ -21,7 +22,8 @@ const Banner = () => {
             Discover my <br /> art space!{" "}
           </h2>
           <button class="bg-transparent mt-5  text   font-extrabold   py-1.5 px-14 border-2 border-white rounded-full">
-            Video Resume
+ 
+            Video Resume  <BsPlayFill className="inline-block text-lg text-white"/> 
           </button>
         </div>
       </div>

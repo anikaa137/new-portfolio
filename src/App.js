@@ -5,6 +5,7 @@ import AnimatedCursor from "react-animated-cursor";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Banner from "./components/Banner/Banner";
+import Body from "./components/Body/Body";
 
 // scrollbar-section-start
 const renderThumb = ({ style, ...props }) => {
@@ -48,9 +49,11 @@ function App() {
       />
       <div class="App">
         <CustomScrollbars autoHide autoHideTimeout={500} autoHideDuration={200}>
+       
           <Router>
-            <NavBar />
+          <NavBar />
             <Banner />
+            <Body/>
           </Router>
         </CustomScrollbars>
       </div>
